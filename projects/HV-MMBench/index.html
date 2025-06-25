@@ -200,6 +200,108 @@
 </section>
 
 
+<section class="section">
+  <div class="container">
+    
+    <div class="columns is-centered">
+      <div class="column is-full has-text-centered content">
+
+        <h2 class="title is-3" id="leaderboard">Leaderboard</h2>
+        <div class="content">
+          <p class="mt-3">Model performance on HV-MMBench under the Multiple-Choice (MC), True/False (TF), Fill-in-Blank (FIB) and Open-Ended (OE) questions.
+          </p>
+          <div class="video-duration">
+          </div>
+
+          <table class="js-sort-table" id="results" style="margin-left: auto; margin-right: auto;">
+            <thead>
+              <tr>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 50px;" data-js-sort-colNum="none"><strong>#</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 180px;" data-js-sort-colNum="none"><strong>Model</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 50px;" data-js-sort-colNum="none"><strong>LLM <br>Params</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 110px;" data-js-sort-colNum="none"><strong>Date</strong></th>
+                <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="4"><strong>MC (%)</strong></th>
+                <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="5"><strong>TF (%)</strong></th>
+                <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="8"><strong>FIB (%)</strong></th> 
+                <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="11"><strong>OE (%)</strong></th> 
+              </tr>
+              <tr>
+                <th data-js-sort-colNum="4"><strong>Acc</strong></th>
+                <th data-js-sort-colNum="5"><strong>Acc</strong></th>
+                <th data-js-sort-colNum="6"><strong>Precision</strong></th>
+                <th data-js-sort-colNum="7"><strong>Recall</strong></th>
+                <th data-js-sort-colNum="8"><strong>F1</strong></th>
+                <th data-js-sort-colNum="9"><strong>ScoreF</strong></th>
+                <th data-js-sort-colNum="10"><strong>ScoreO</strong></th>
+                <th data-js-sort-colNum="11"><strong>ScoreG</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;">
+                  <b class="">
+                    <a href="https://arxiv.org/pdf/2406.07476" class="ext-link" style="font-size: 16px; margin-left: 5px;">VideoLLaMA2-7B</a>
+                    <p style="font-size: 12px; margin-left: 5px; color: #858383;">DAMO Academy & Alibaba Group</p>
+                  </b>
+                </td>
+                <td style="vertical-align: middle;">7B</td>
+                <td style="vertical-align: middle;">2025-05-22</td>
+                <td style="vertical-align: middle;"><b class="">81.7</b></td>
+                <td style="vertical-align: middle;"><b class="">80.4</b></td>
+                <td style="vertical-align: middle;">4.31</td>
+                <td style="vertical-align: middle;">0.55</td>
+                <td style="vertical-align: middle;">0.97</td>
+                <td style="vertical-align: middle;">0.19</td>
+                <td style="vertical-align: middle;">0.35</td>
+                <td style="vertical-align: middle;">0.56</td>                                 
+              </tr>
+              <!-- <tr>
+                <td style="vertical-align: middle;"></td>
+                <td style="text-align: left; padding: 2px 10px;">
+                  <b class="">
+                    <a href="https://arxiv.org/pdf/2408.03326" class="ext-link" style="font-size: 16px; margin-left: 5px;">LLaVA-OneVision</a>
+                    <p style="font-size: 12px; margin-left: 5px; color: #858383;">Bytedance & NTU S-Lab</p>
+                  </b>
+                </td>
+                <td style="vertical-align: middle;">72B </td>
+                <td style="vertical-align: middle;">32 </td>
+                <td style="vertical-align: middle;">2024-08-08</td>
+                <td style="vertical-align: middle;"><b class="">66.3</b></td>
+                <td style="vertical-align: middle;"><b class="">69.6</b></td>
+                <td style="vertical-align: middle;">76.7</td>
+                <td style="vertical-align: middle;">79.3</td>
+                <td style="vertical-align: middle;">62.2</td>
+                <td style="vertical-align: middle;">66.9</td>
+                <td style="vertical-align: middle;">60.0</td>
+                <td style="vertical-align: middle;">62.4</td>                                 
+              </tr> -->
+          </tbody>                                                   
+        </table> 
+<!-- 
+        <p style="margin-top: -20px;">
+          <strong style="color: #22a56e; font-size: 18px;" >Green date</strong> indicates the newly added/updated models  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          - indicates closed-source models
+        </p> -->
+
+        <!-- <p style=" text-align: left;">
+          1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 0.5 fps to ensure the stability of the API.
+          </br>2* The videos less than 384 seconds are sampled at 1 fps, and for those longer than 384 seconds, we extract 384 frames uniformly. All the frames are resized to 512x512 resolution to fit within GPT-4o’s max context length.
+          </br>3* The videos are sampled at 2 fps, and the upper limit is 768 frames.
+          </br>4* The videos are sampled at 1 fps, and the upper limit is 600 frames.
+          </br>5* The videos are sampled at 2 fps, and the upper limit is 480 frames.
+        </p> -->
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- DATASET SECTION -->
 <section class="hero is-light is-small">
   <div class="hero-body has-text-centered">
